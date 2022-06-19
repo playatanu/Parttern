@@ -8,9 +8,9 @@ int main()
 
     Init size = Init();
 
-    for (int i = 0; i < size.column; i++)
+    for (int i = size.zero; i < size.row; i++)
     {
-        for (int j = 0; j <= i; j++)
+        for (int j = size.zero; j <= i; j++)
         {
             cout << "* ";
         }

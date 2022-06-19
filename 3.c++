@@ -1,10 +1,14 @@
 #include "iostream"
+#include "init.h"
 
 using namespace std;
 
 int main()
 {
-    for (int i = 5; i >= 0; i--)
+
+    Init size = Init();
+
+    for (int i = 0; i < size.column; i++)
     {
         for (int j = 0; j <= i; j++)
         {
@@ -13,3 +17,14 @@ int main()
         cout << "\n";
     }
 }
+
+/*/
+
+*
+* *
+* * *
+* * * *
+* * * * *
+* * * * * *
+
+/*/

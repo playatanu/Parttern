@@ -13,7 +13,7 @@ int main()
 
         for (int k = totalRow; k > i; k--) // Row Loop
         {
-            cout << " .";
+            cout << " 0";
         }
 
         for (int l = 0; l < i; l++)

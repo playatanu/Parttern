@@ -6,39 +6,39 @@ using namespace std;
 int main()
 {
 
-    Init size = Init();
+  Init size = Init();
 
-    for (int i = size.zero; i < size.row; i++)
+  for (int i = size.zero; i < size.row; i++)
+  {
+
+    for (int k = size.column; k > i; k--)
     {
-
-        for (int k = size.column; k > i; k--)
-        {
-            cout << "  ";
-        }
-
-        for (int l = 0; l < i; l++)
-        {
-            cout << " *";
-        }
-
-        cout << "\n";
+      cout << "  ";
     }
 
-    for (int i = size.row; i > size.zero; i--)
+    for (int l = 0; l < i; l++)
     {
-
-        for (int k = i; k < size.column; k++)
-        {
-            cout << "  ";
-        }
-
-        for (int l = 0; l < i; l++)
-        {
-            cout << " *";
-        }
-
-        cout << "\n";
+      cout << " *";
     }
+
+    cout << "\n";
+  }
+
+  for (int i = size.row; i > size.zero; i--)
+  {
+
+    for (int k = i; k < size.column; k++)
+    {
+      cout << "  ";
+    }
+
+    for (int l = 0; l < i; l++)
+    {
+      cout << " *";
+    }
+
+    cout << "\n";
+  }
 }
 
 /*

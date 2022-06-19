@@ -8,10 +8,10 @@ int main()
 
     Init size = Init();
 
-    for (int i = 0; i < size.column; i++) // Column Loop
+    for (int i = size.zero; i < size.row; i++) // Row Loop
     {
 
-        for (int k = size.row; k > i; k--) // Row Loop
+        for (int k = size.column; k > i; k--) // Column Loop
         {
             cout << "  ";
         }
